@@ -1,0 +1,39 @@
+{
+    "expo": {
+        "name": "Screen Buddy",
+        "slug": "screenbuddy",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.screenbuddy.app",
+            "infoPlist": {
+                "NSFamilySharingUsageDescription": "Screen Buddy needs Family Sharing to manage screen time for your children."
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "package": "com.screenbuddy.app",
+            "permissions": [
+                "android.permission.PACKAGE_USAGE_STATS",
+                "android.permission.BIND_ACCESSIBILITY_SERVICE"
+            ]
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        }
+    }
+}
